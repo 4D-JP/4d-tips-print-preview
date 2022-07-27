@@ -76,3 +76,15 @@ If (Not:C34(Semaphore:C143("印刷"; 60*3)))
 	CLEAR SEMAPHORE:C144("印刷")
 End if 
 ```
+
+*set_print_options*
+
+* 印刷マージン等を復元します。
+
+```4d
+#DECLARE($options : Object)
+
+SET PRINT PREVIEW:C364($options.printView)
+SET CURRENT PRINTER:C787($options.currentPrinter)
+SET PRINTABLE MARGIN:C710($options.marginLeft; $options.marginTop; $options.marginRight; $options.marginBottom)
+```
