@@ -63,3 +63,16 @@ Case of
 		SET PRINT OPTION:C733(Destination option:K47:7; 2; $path)
 End case 
 ```
+
+*print_form*
+
+* 同時に複数のプロセスで印刷コマンドを実行することはできないのでセマフォで制御します。
+
+```4d
+If (Not:C34(Semaphore:C143("印刷"; 60*3)))
+	OPEN PRINTING JOB:C995
+	$h:=Print form:C5("TEST")
+	CLOSE PRINTING JOB:C996
+	CLEAR SEMAPHORE:C144("印刷")
+End if 
+```
