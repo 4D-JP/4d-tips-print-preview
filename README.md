@@ -10,3 +10,24 @@ print_form
 set_print_options($options)		
 OPEN URL:C673($path)
 ```
+
+*get_print_options*
+
+* ドキュメントを出力する場合，印刷マージンは`0`にセットしますが，後で復元できるよう，現在の値を取って置きます。
+
+* 自前でプレビューを作成するので`SET PRINT PREVIEW`は`False`に設定します。
+
+```4d
+#DECLARE()->$options : Object
+
+$options:=New object:C1471(\
+"printView"; Get print preview:C1197; \
+"currentPrinter"; Get current printer:C788)
+
+GET PRINTABLE MARGIN:C711($left; $top; $right; $bottom)
+$options.marginLeft:=$left
+$options.marginTop:=$top
+$options.marginRight:=$right
+$options.marginBottom:=$bottom
+```
+
