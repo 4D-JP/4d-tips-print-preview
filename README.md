@@ -15,8 +15,6 @@ OPEN URL:C673($path)
 
 * ドキュメントを出力する場合，印刷マージンは`0`にセットしますが，後で復元できるよう，現在の値を取って置きます。
 
-* 自前でプレビューを作成するので`SET PRINT PREVIEW`は`False`に設定します。
-
 ```4d
 #DECLARE()->$options : Object
 
@@ -35,6 +33,7 @@ $options.marginBottom:=$bottom
 
 * カレントプリンターはファイル形式に合わせてXPSドライバーまたはPDFドライバーに設定します。
 * `Destination option`は，macOS/PDF Creator 1.7.3であれば`3`，Windows標準ドライバーであれば`2`です。
+* 自前でプレビューを作成するので`SET PRINT PREVIEW`は`False`に設定します。
 
 ```4d
 #DECLARE($name : Text)->$path : Text
