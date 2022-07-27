@@ -1,0 +1,89 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 5,
+	"bottomMargin": 5,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 5,
+					"left": 5,
+					"width": 290,
+					"height": 290,
+					"fill": "#b1c4dd",
+					"stroke": "#191970",
+					"strokeWidth": 3
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "プリントプレビューのテスト",
+					"top": 134,
+					"left": 5,
+					"width": 290,
+					"height": 32,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#191970"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "プリントプレビューのテスト",
+					"top": 0,
+					"left": 263,
+					"width": 32,
+					"height": 290,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAngle": 90,
+					"textAlign": "center",
+					"stroke": "#191970"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "プリントプレビューのテスト",
+					"top": 0,
+					"left": 5,
+					"width": 32,
+					"height": 290,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAngle": 270,
+					"textAlign": "center",
+					"stroke": "#191970"
+				}
+			}
+		}
+	],
+	"geometryStamp": 86,
+	"markerFooter": 300,
+	"markerBreak": 300,
+	"markerBody": 300,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
